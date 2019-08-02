@@ -18,7 +18,7 @@ def user(number):
 	fish = max(dog) + 1
 	dog.append(fish)
 	print(dog)
-	if len(dog) >= 4:
+	while len(dog) > 2:
 		dog.remove(min(dog))
 	while True:
 		if fish % 2 == 0:
