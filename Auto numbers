@@ -1,0 +1,31 @@
+def user(number):
+	def odd(nmb):
+		nmb += 1
+		processing(nmb)
+	def processing(evn):
+		print(evn)
+		while True:
+			evn /= 2
+			print(evn)
+			if not evn % 2 == 0:
+				odd(evn)
+			if evn <= 2:
+				print("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL")
+				break
+		user(evn)
+	dog = []
+	dog.append(number)
+	fish = max(dog) + 1
+	dog.append(fish)
+	print(dog)
+	if len(dog) >= 4:
+		dog.remove(min(dog))
+	while True:
+		if fish % 2 == 0:
+			processing(fish)
+		elif not fish % 2 == 0:
+			odd(fish)
+
+
+cat=int(input("Enter number here: "))
+user(cat)
